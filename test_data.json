@@ -1,0 +1,144 @@
+{
+    "total": 2744,
+    "offset": 0,
+    "next": 50,
+    "data": [
+        {
+            "paperId": "300d08e8f5c310c2b194b7eb94398e480994d5cc",
+            "title": "Celeb-DF: A Large-Scale Challenging Dataset for DeepFake Forensics"
+        },
+        {
+            "paperId": "4f09843e22a085af935f0a31329e90cb1d5441ee",
+            "title": "Multi-attentional Deepfake Detection"
+        },
+        {
+            "paperId": "3e419a95be55c9e52a549cd727d5660d9ecc38d1",
+            "title": "ASVspoof 2021: accelerating progress in spoofed and deepfake speech detection"
+        },
+        {
+            "paperId": "9044cfe7bf30b2fe5a39f23ecfbea9da65178782",
+            "title": "Adversarial Deepfakes: Evaluating Vulnerability of Deepfake Detectors to Adversarial Examples"
+        },
+        {
+            "paperId": "2d066beb34469559e0fc5e5ab4d68dc736cfd46f",
+            "title": "Exposing DeepFake Videos By Detecting Face Warping Artifacts"
+        },
+        {
+            "paperId": "3d26fb6e819a79b6abd4964d8d96314e74f73423",
+            "title": "The Deepfake Detection Challenge (DFDC) Preview Dataset"
+        },
+        {
+            "paperId": "2734bf6fd46357504fd1deef33ad69207b39fd57",
+            "title": "TweepFake: About detecting deepfake tweets"
+        },
+        {
+            "paperId": "3489cb6f6b45dc8abd31c801a95b6ebcd6463ef8",
+            "title": "Deepfake Video Detection Using Convolutional Vision Transformer"
+        },
+        {
+            "paperId": "2cdb1b96846609a965496236eaccb54b1790daab",
+            "title": "The DeepFake Detection Challenge Dataset"
+        },
+        {
+            "paperId": "7649d833eff8f50c972ad2bccb221c6e15b9bf3e",
+            "title": "Learning Self-Consistency for Deepfake Detection"
+        },
+        {
+            "paperId": "e70d50467067cf8d11b10e4fd3b72096d8421db1",
+            "title": "Effects of Disinformation Using Deepfake: The Protective Effect of Media Literacy Education"
+        },
+        {
+            "paperId": "5935d6005b6568308bf0942f2cc9bb7f9d457c11",
+            "title": "FakeAVCeleb: A Novel Audio-Video Multimodal Deepfake Dataset"
+        },
+        {
+            "paperId": "37033b779765b5ed3b3eaaf8e1d5c5a62ff02e85",
+            "title": "Deepfake Video Detection Using Recurrent Neural Networks"
+        },
+        {
+            "paperId": "5b422386d8944f7ab10ec5e2067d596b8cc8a3bb",
+            "title": "ID-Reveal: Identity-aware DeepFake Video Detection"
+        },
+        {
+            "paperId": "1806b9acb524a6655e68e17a1605fbe383151c83",
+            "title": "End-to-End Spectro-Temporal Graph Attention Networks for Speaker Verification Anti-Spoofing and Speech Deepfake Detection"
+        },
+        {
+            "paperId": "b4cbc3ce5fddfbf2d3271018ae697569834a3433",
+            "title": "Artificial Fingerprinting for Generative Models: Rooting Deepfake Attribution in Training Data"
+        },
+        {
+            "paperId": "269c0799be005848362c69faddad5fc8555da618",
+            "title": "Deepfake Detection Scheme Based on Vision Transformer and Distillation"
+        },
+        {
+            "paperId": "d3f7cef8256d85e9505c3f4c329225c22b8162dc",
+            "title": "Deepfake detection by human crowds, machines, and machine-informed crowds"
+        },
+        {
+            "paperId": "84421139efaae7862116f39d4df1cd5ea27103fc",
+            "title": "Adversarial Threats to DeepFake Detection: A Practical Perspective"
+        },
+        {
+            "paperId": "cf4ee08b8f571cc40f5c0e07906c49caf0ac023d",
+            "title": "DefakeHop: A Light-Weight High-Performance Deepfake Detector"
+        },
+        {
+            "paperId": "02a9ea5dcb34f610d88a391445575b80101c1cbf",
+            "title": "One Detector to Rule Them All: Towards a General Deepfake Attack Detection Framework"
+        },
+        {
+            "paperId": "58b9ffd73bf120cdc69aca6fef230483851ff9e6",
+            "title": "KoDF: A Large-scale Korean DeepFake Detection Dataset"
+        },
+        {
+            "paperId": "cf71d9307573ca58e4f0a92a0cc77d505f0c4ec1",
+            "title": "A lightweight 3D convolutional neural network for deepfake detection"
+        },
+        {
+            "paperId": "7c88de3327f129190f56c145a37b29f59a140dcd",
+            "title": "Raw Differentiable Architecture Search for Speech Deepfake and Spoofing Detection"
+        },
+        {
+            "paperId": "edaf18eecac9f94a8abe582ff3ab7032fdc1d4e9",
+            "title": "Deepfake detection using rationale-augmented convolutional neural network"
+        },
+        {
+            "paperId": "af9b38362157c62119259ede4ffa205cb7602d3d",
+            "title": "Spatiotemporal Inconsistency Learning for DeepFake Video Detection"
+        },
+        {
+            "paperId": "41cbea36c8107d6ed4f3b89bd641e292d0096a24",
+            "title": "Interpretable and Trustworthy Deepfake Detection via Dynamic Prototypes"
+        },
+        {
+            "paperId": "07e294aff9fa3efbf4f0c0b0f4fb301c96d5a1fc",
+            "title": "Am I a Real or Fake Celebrity? Measuring Commercial Face Recognition Web APIs under Deepfake Impersonation Attack"
+        },
+        {
+            "paperId": "efedff6481bd67ffe7f1924512d97742f0d34c9a",
+            "title": "FReTAL: Generalizing Deepfake Detection using Knowledge Distillation and Representation Learning"
+        },
+        {
+            "paperId": "77810e84d07b55818f00b9c22defbf82eccb43bb",
+            "title": "The DeepFake Detection Challenge (DFDC) Dataset."
+        },
+        {
+            "paperId": "83c8a17f73a338df4e45a250375ffbf83b487c92",
+            "title": "Optical Flow based CNN for detection of unlearnt deepfake manipulations"
+        },
+        {
+            "paperId": "c74db89fd744a2b42702820fcb52cbc56b67b0ff",
+            "title": "Joint Audio-Visual Deepfake Detection"
+        },
+        {
+            "paperId": "3916cb5c5ead76dc3a3c126fb41d68bc21571a1b",
+            "title": "DeepFake Detection by Analyzing Convolutional Traces"
+        },
+        {
+            "paperId": "2060fa23185747294541f428c39640177450b8fb",
+            "title": "WildDeepfake: A Challenging Real-World Dataset for Deepfake Detection"
+        },
+        {
+            "paperId": "017d1ba6de0951e0641045224f58c0b6e597b257",
+            "title": "Emotions Don"t Lie: An Audio-Visual Deepfake Detection Method using Affective Cues"}, {"paperId": "1999c859bccbbebf65079be198abe8d833d6dd15", "title": "WaveFake: A Data Set to Facilitate Audio Deepfake Detection"}, {"paperId": "72158d16aba68c3f05a2307370f777af27657633", "title": "Sharp Multiple Instance Learning for DeepFake Video Detection"}, {"paperId": "1a06b0e9e35fffa8d8b05b64dd271e135e632d8f", "title": "Deepfake false memories"}, {"paperId": "eabc4820fc95ebd763b582cd7f118c9d5ddd69cc", "title": "Preventing DeepFake Attacks on Speaker Authentication by Dynamic Lip Movement Analysis"}, {"paperId": "e3f04b761f4b83bff4ab224222367ebc8fd8bb5f", "title": "Towards Solving the DeepFake Problem : An Analysis on Improving DeepFake Detection using Dynamic Face Augmentation"}, {"paperId": "25e9b28064866d572d1fbcd6610bbee270d4588b", "title": "Evaluation of an Audio-Video Multimodal Deepfake Dataset using Unimodal and Multimodal Detectors"}, {"paperId": "afb2381c9933fd15ceb4c5ccc34107f282f5a7fe", "title": "A New Deep Learning-Based Methodology for Video Deepfake Detection Using XGBoost"}, {"paperId": "c2842b1cd4fd55dffce178bbfb5f462df8e7eb97", "title": "A Survey on Deepfake Video Detection"}, {"paperId": "8b65ccd6e2b878639cc4bd01f6f0aea8d22e60b2", "title": "Detecting Deepfake Videos with Temporal Dropout 3DCNN"}, {"paperId": "445b5c11ed88098c6caf4d3c02ec58712d0ad0e0", "title": "iCaps-Dfake: An Integrated Capsule-Based Model for Deepfake Image and Video Detection"}, {"paperId": "e36c812a1a8fe2fbca724592018f1705430e478a", "title": "Defending against GAN-based DeepFake Attacks via Transformation-aware Adversarial Faces"}, {"paperId": "cae4d6a571d59922a778e33ec8a6b10c4c4f810b", "title": "Deepfake Videos in the Wild: Analysis and Detection"}, {"paperId": "50369f1952cb45efde404c20f680d8c1d5558cda", "title": "Generalization of Audio Deepfake Detection"}, {"paperId": "a32ac1bc5934e0870aed4686e65ce45d84e1c591", "title": "Evading Deepfake-Image Detectors with White- and Black-Box Attacks"}, {"paperId": "54d71afa5ec350958a920b637e37f78e2654563d", "title": "Deepfake Detection using Spatiotemporal Convolutional Networks"}]}
