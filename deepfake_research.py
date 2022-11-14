@@ -1,4 +1,6 @@
 import requests
+import matplotlib.pyplot as plt
+import numpy as np
 
 result = requests.get(
     "http://api.semanticscholar.org/graph/v1/paper/search?query=deepfake&limit=50"
@@ -10,7 +12,8 @@ if result.reason != "OK":
 
 paper_records = result.json()
 hits = paper_records["data"]
-papers_by_year = {}
+print("Total number of papers: {}".format(len(hits)))
+years = []
 
 for hit in hits:
     result = requests.get(
@@ -25,9 +28,13 @@ for hit in hits:
 
     paper_info = result.json()
     year = paper_info["year"]
-    if year in papers_by_year:
-        papers_by_year[year] += 1
-    else:
-        papers_by_year[year] = 1
+    years.append(year)
 
-    print(papers_by_year)
+fig = plt.figure()
+counts, bins = np.histogram(years)
+plt.bar(counts, bins)
+plt.xlabel("Year")
+plt.ylabel("Number of Papers")
+title = "Number of Deepfake Paper Publications Over Time"
+fig.suptitle(title, wrap=True)
+plt.show()
