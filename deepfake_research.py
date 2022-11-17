@@ -30,7 +30,7 @@ def fetchDeepfakeAndEthicsPapers():
         paper_records = result.json()
         num_papers = paper_records["total"]
         print(
-            "Total number of deepfake+ethic papers in {}: {}".format(year, num_papers)
+            "Total number of deepfake+ethics papers in {}: {}".format(year, num_papers)
         )
         papers_by_year[year] = num_papers
 
@@ -58,24 +58,22 @@ def fetchDeepfakePapers():
         return papers_by_year
 
 
-def plotData(file):
+def plotData(file, title):
     df = pd.read_csv(file)
-
-    fig = px.line(
-        df,
-        y="NumPapers",
-        x="Year",
-        title="Number of Deepfake Paper Publications Over Time",
-    )
+    fig = px.line(df, y=df.columns, x="Year", title=title)
     fig.show()
 
 
 deepfake_file = "num_deepfake_papers_by_year.csv"
 deepfake_ethics_file = "num_deepfake_ethics_papers_by_year.csv"
-
+combined_file = "combined_data.csv"
 # deepfake_papers_by_year = fetchDeepfakePapers()
-deepfake_ethics_papers_by_year = fetchDeepfakeAndEthicsPapers()
+# deepfake_ethics_papers_by_year = fetchDeepfakeAndEthicsPapers()
 # writeToFile(deepfake_papers_by_year, save_path=deepfake_file)
-writeToFile(deepfake_ethics_papers_by_year, save_path=deepfake_ethics_file)
-# plotData(deepfake_papers_by_year)
-plotData(deepfake_ethics_papers_by_year)
+# writeToFile(deepfake_ethics_papers_by_year, save_path=deepfake_ethics_file)
+# plotData(deepfake_file, "Number of Deepfake Paper Publications Over Time")
+# plotData(deepfake_ethics_file, "Number of Deepfake Paper Publications With Ethical Considerations Over Time")
+plotData(
+    combined_file,
+    "Number of Deepfake Paper Publications With Ethical Considerations Over Time",
+)
