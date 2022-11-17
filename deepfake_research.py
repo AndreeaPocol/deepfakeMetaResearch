@@ -1,40 +1,53 @@
 import requests
 import matplotlib.pyplot as plt
-import numpy as np
+import csv
+import pandas as pd
+import plotly.express as px
 
-result = requests.get(
-    "http://api.semanticscholar.org/graph/v1/paper/search?query=deepfake&limit=50"
-)
 
-if result.reason != "OK":
-    print(result.status_code, result.reason)
-    exit
+def writeToFile(papers_by_year, save_path):
+    field_names = ["Year", "NumPapers"]
+    with open(save_path, "w+") as file:
+        csvWriter = csv.writer(file, delimiter=",")
+        csvWriter.writerow(field_names)
+        for key in papers_by_year.keys():
+            file.write("%s, %s\n" % (key, papers_by_year[key]))
 
-paper_records = result.json()
-hits = paper_records["data"]
-print("Total number of papers: {}".format(len(hits)))
-years = []
 
-for hit in hits:
-    result = requests.get(
-        "https://api.semanticscholar.org/graph/v1/paper/{id}?fields=url,year,title".format(
-            id=hit["paperId"]
+def fetchPaperData():
+    papers_by_year = {}
+    for year in range(2019, 2023):
+        result = requests.get(
+            "http://api.semanticscholar.org/graph/v1/paper/search?query=deepfake&year={}".format(
+                year
+            )
         )
+
+        if result.reason != "OK":
+            print("Error: ", result.status_code, result.reason)
+            exit
+
+        paper_records = result.json()
+        num_papers = paper_records["total"]
+        print("Total number of papers in {}: {}".format(year, num_papers))
+        papers_by_year[year] = num_papers
+
+        return papers_by_year
+
+
+def plotData(file):
+    df = pd.read_csv(file)
+
+    fig = px.line(
+        df,
+        y="NumPapers",
+        x="Year",
+        title="Number of Deepfake Paper Publications Over Time",
     )
+    fig.show()
 
-    if result.reason != "OK":
-        print(result.status_code, result.reason)
-    exit
 
-    paper_info = result.json()
-    year = paper_info["year"]
-    years.append(year)
-
-fig = plt.figure()
-counts, bins = np.histogram(years)
-plt.bar(counts, bins)
-plt.xlabel("Year")
-plt.ylabel("Number of Papers")
-title = "Number of Deepfake Paper Publications Over Time"
-fig.suptitle(title, wrap=True)
-plt.show()
+file = "num_deepfake_papers_by_year.csv"
+# papers_by_year = fetchPaperData()
+# writeToFile(papers_by_year, save_path=file)
+plotData(file)
