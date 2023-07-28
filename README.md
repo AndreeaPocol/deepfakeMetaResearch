@@ -1,5 +1,7 @@
 # Seeing Is No Longer Believing: A Survey on the State of Deepfakes and Other Nonveridical Media
 
+Note: This paper has been accepted to CGI 2023.
+
 There are several components to this repo:
 1. a few examples of deepfakes we generated (e.g., of Chris Hemsworth in a tiara)
 
