@@ -9,7 +9,7 @@ Stable Diffusion 1            |  Stable Diffusion 2.1            |  Stable Diffu
 :-------------------------:|:-------------------------:|:-------------------------:|:-------------------------:
 ![image](examples/chris-tiara-sd1.png)  |  ![image](examples/chris-tiara-sd2.jpeg)  |  ![image](examples/chris-tiara-sd2-again.jpeg) | ![image](examples/chris-tiara-sd2-once-again.jpeg)
 
-2. a background study on the history and evolution of deepfakes (including visualizations for bibliometric data, usage metrics, etc.)
+2. a background study on the history and evolution of deepfakes (including visualizations for bibliometric data, usage metrics, etc.). [CS Rankings](https://csrankings.org/#/index) was used to determine the most prolific institutions for deepfake research. The Semantic Scholar UI was used to determine the number of deepfake papers published over the years.
 1. the results of a user study wherein 260 participants were presented with 20 images (a combination of real and fake), and asked which ones they believed where real, which ones they believed were fake, and why.
 
 The link to our published paper is incoming.
